@@ -23,6 +23,7 @@ while (playAgain) do
       break
     end
   end
+  puts "Tight game! Looks like there wasn't a winner :(" if !board.finished
   puts 'The game is finished, would you like to play again? Y or N'
   answer = gets.chomp.upcase
   playAgain = false if (answer == 'N')
